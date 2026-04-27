@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://vu1aptau2xuv"]
+
+[ext_resource type="ArrayMesh" uid="uid://cwmp8hhm8ujf2" path="res://MeshResources/cube.obj" id="1_enkuj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gw5md"]
+size = Vector3(1.1782837, 1.196167, 1.1782227)
+
+[node name="RigidBody3D" type="RigidBody3D" unique_id=146676529]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=313514400]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.009246826, 0.008605957, 0.035888672)
+shape = SubResource("BoxShape3D_gw5md")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1749366611]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, 0, 0, 0)
+mesh = ExtResource("1_enkuj")

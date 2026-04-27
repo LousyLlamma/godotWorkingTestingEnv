@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dskud8q327nax"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://ImageResources/icon.svg" id="1_skn31"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_4xot2"]
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1512789018]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1357457214]
+shape = SubResource("WorldBoundaryShape3D_4xot2")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=625090421]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, -0.50348496, 0)
+axis = 1
+texture = ExtResource("1_skn31")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://db0prem4whjyd"]
+
+[ext_resource type="Script" uid="uid://dobgdnedxk0g8" path="res://Scenes/gui_manager.gd" id="1_fuh73"]
+
+[node name="graphicInterfaceManager" type="Control" unique_id=1420723397]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fuh73")
+
+[node name="textDisplay" type="Label" parent="." unique_id=61450433]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 49.0
+text = "Test
+"

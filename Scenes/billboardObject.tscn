@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://crqib8mslitbi"]
+
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://ImageResources/icon.svg" id="1_w5qx6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2478c"]
+size = Vector3(1.1277161, 1.2235718, 0.1051178)
+
+[node name="StaticBody3D2" type="StaticBody3D" unique_id=873517505]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=15263888]
+shape = SubResource("BoxShape3D_2478c")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=661516414]
+texture = ExtResource("1_w5qx6")

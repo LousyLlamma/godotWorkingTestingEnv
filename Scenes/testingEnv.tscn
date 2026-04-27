@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dq4r3rom77d2l"]
+
+[ext_resource type="PackedScene" uid="uid://dcr73lw3pccm1" path="res://Scenes/characterCube.tscn" id="1_k24tj"]
+[ext_resource type="PackedScene" uid="uid://dskud8q327nax" path="res://Scenes/worldBarrier.tscn" id="2_7aw0a"]
+[ext_resource type="Script" uid="uid://jfi3whw6gmh2" path="res://src/omni_light_3d.gd" id="3_77h1k"]
+[ext_resource type="PackedScene" uid="uid://vu1aptau2xuv" path="res://Scenes/rigidObject.tscn" id="4_qdk44"]
+[ext_resource type="PackedScene" uid="uid://crqib8mslitbi" path="res://Scenes/billboardObject.tscn" id="5_7aw0a"]
+[ext_resource type="PackedScene" uid="uid://db0prem4whjyd" path="res://Scenes/guiManager.tscn" id="6_77h1k"]
+[ext_resource type="Script" uid="uid://cqe8km6vnv4f7" path="res://Scenes/shader.gd" id="7_qdk44"]
+
+[node name="Node3D" type="Node3D" unique_id=1308012534]
+
+[node name="CharacterBody3D" parent="." unique_id=1850763376 instance=ExtResource("1_k24tj")]
+
+[node name="StaticBody3D" parent="." unique_id=1512789018 instance=ExtResource("2_7aw0a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8319477, 3.2774773)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=376061673]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.69066715, 4.2006674, -0.6264467)
+script = ExtResource("3_77h1k")
+
+[node name="movableBlock" parent="." unique_id=146676529 instance=ExtResource("4_qdk44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.6554217, -5.2241106)
+
+[node name="movableBlock2" parent="." unique_id=745475077 instance=ExtResource("4_qdk44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.931387, 3.6554217, 0.5531101)
+
+[node name="staticBillboard" parent="." unique_id=873517505 instance=ExtResource("5_7aw0a")]
+transform = Transform3D(0.99998564, 0.0051373215, -0.0015216869, -0.0051372536, 0.99998677, 4.8734953e-05, 0.0015219174, -4.091162e-05, 0.9999988, -3.6280956, 1.4249218, 3.9181767)
+
+[node name="graphicInterfaceManager" parent="." unique_id=1420723397 instance=ExtResource("6_77h1k")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1256132614]
+script = ExtResource("7_qdk44")

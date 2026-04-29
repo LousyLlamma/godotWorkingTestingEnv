@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://db0prem4whjyd"]
 
-[ext_resource type="Script" uid="uid://dobgdnedxk0g8" path="res://Scenes/gui_manager.gd" id="1_fuh73"]
+[ext_resource type="Script" uid="uid://dobgdnedxk0g8" path="res://src/gui_manager.gd" id="1_fuh73"]
 
 [node name="graphicInterfaceManager" type="Control" unique_id=1420723397]
 layout_mode = 3
@@ -9,9 +9,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_fuh73")
 
-[node name="textDisplay" type="Label" parent="." unique_id=61450433]
+[node name="textDisplay" type="RichTextLabel" parent="." unique_id=1229445533]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 49.0
-text = "Test
-"
+offset_top = 399.0
+offset_right = 1150.0
+offset_bottom = 649.0
+text = "TestSecond MessageSecond MessageSecond MessageSecond MessageSecond MessageSecond MessageSecond Message"

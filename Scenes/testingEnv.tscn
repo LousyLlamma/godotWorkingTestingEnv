@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://vu1aptau2xuv" path="res://Scenes/rigidObject.tscn" id="4_qdk44"]
 [ext_resource type="PackedScene" uid="uid://crqib8mslitbi" path="res://Scenes/billboardObject.tscn" id="5_7aw0a"]
 [ext_resource type="PackedScene" uid="uid://db0prem4whjyd" path="res://Scenes/guiManager.tscn" id="6_77h1k"]
-[ext_resource type="Script" uid="uid://cqe8km6vnv4f7" path="res://Scenes/shader.gd" id="7_qdk44"]
+[ext_resource type="Script" uid="uid://cqe8km6vnv4f7" path="res://src/shader.gd" id="7_qdk44"]
 
 [node name="Node3D" type="Node3D" unique_id=1308012534]
 

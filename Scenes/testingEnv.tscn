@@ -11,6 +11,8 @@
 [node name="Node3D" type="Node3D" unique_id=1308012534]
 
 [node name="CharacterBody3D" parent="." unique_id=1850763376 instance=ExtResource("1_k24tj")]
+SPEED = 30.0
+JUMP_VELOCITY = 20.0
 
 [node name="StaticBody3D" parent="." unique_id=1512789018 instance=ExtResource("2_7aw0a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8319477, 3.2774773)

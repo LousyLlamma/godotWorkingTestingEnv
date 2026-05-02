@@ -47,3 +47,11 @@ func detectDoubleTap(input_dir: Vector2) -> bool:
 		return true
 		
 	return false
+func checkIfRotateCamera() -> Vector2:
+	if (Input.is_action_pressed("rotateCamLeft")):
+		return Vector2(0,1)
+	elif (Input.is_action_pressed("rotateCamRight")):
+		return Vector2(0,-1)
+	else:
+		return Vector2(0,0)
+		
